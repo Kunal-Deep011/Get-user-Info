@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get User-Info</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+         
+</head>
+<body>
+    <div class="container">
+
+        <div id="ip">
+           <h1>MY Public IP ADDRESS :</h1>
+           <h1 id="gfg"></h1>
+       </div>
+        <div><button type="button"  id="btnGetInfo">Get Data</button></div>
+        <section>
+
+            <div class="detail-box">
+                <div id="lat">Lat : </div>
+                <div id="city">City : </div>
+                <div id="org">Organisation : </div>
+                <div id="long">Long : </div>
+                <div id="reg">Region : </div>
+                <div id="host">Hostname : </div>
+             </div>
+             <div id="img-box">
+                 <iframe 
+                 id="map" 
+                 src="" 
+                 frameborder="0" 
+                 height="500" 
+                 scrolling="no" 
+                 marginheight="25" 
+                 marginwidth="0" 
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
+             </div>
+             <div><p id="time">Time Zone : </p></div>
+             <div><p id="date">Date And Time :</p></div>
+             <div><p id="pin">Pincode : </p></div>
+             <div><p id="msg">Message : </p></div>
+             <div class="in">
+                <button> <span class="material-symbols-outlined icon" style="font-size : 32px">
+                    search
+                    </span>
+                </button>
+                <input type="text" placeholder="Filter" id="input" onkeyup="searching()">
+            </div>
+             <div class="container-2">
+        
+                <div class="box1" id="dataaBox">
+        
+                   <!-- <ul class="info">
+                        <li>Name</li>
+                        <li>Branch Type</li>
+                        <li>Delivery Status</li>
+                        <li>District</li>
+                        <li>Division</li>
+                    </ul>
+                    <ul class="info">
+                        <li>Name</li>
+                        <li>Branch Type</li>
+                        <li>Delivery Status</li>
+                        <li>District</li>
+                        <li>Division</li>
+                    </ul>-->
+        
+                </div>
+             </div>
+        </section>
+        
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
